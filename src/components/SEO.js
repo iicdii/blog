@@ -25,7 +25,7 @@ const SEO = ({ title, description, image }) => {
   return (
     <Helmet
       htmlAttributes={{
-        lang: `en`,
+        lang: `ko`,
       }}
       title={title}
       defaultTitle={site.siteMetadata.title}
@@ -47,6 +47,10 @@ const SEO = ({ title, description, image }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:image" content={metaImage} />
       <meta name="twitter:description" content={metaDescription} />
+
+      {/* Import Google Fonts  */}
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap" rel="stylesheet" />
     </Helmet>
   )
 }

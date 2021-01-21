@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import styled from '@emotion/styled'
 import { Global } from '@emotion/react'
+import 'dayjs/locale/ko'
+import dayjs from 'dayjs';
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 import { globalStyles } from '../styles/globalStyles.js'
@@ -35,6 +37,9 @@ const Layout = props => {
     }
   }
   useEffect(() => window.addEventListener('keydown', handleFirstTab), [])
+  useEffect(() => {
+    dayjs.locale('ko');
+  }, []);
 
   return (
     <Root className="siteRoot">

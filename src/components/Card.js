@@ -2,6 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
+import dayjs from 'dayjs';
 
 const Post = styled.li`
   position: relative;
@@ -51,7 +52,8 @@ const Title = styled.h2`
 
 const Date = styled.h3`
   margin: 0 1rem 0.5rem 1rem;
-  color: gray;
+  //color: gray;
+  color: ${props => props.theme.colors.highlight}
 `
 
 const ReadingTime = styled.h4`
@@ -72,7 +74,7 @@ const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {
           <Link to={`${props.basePath}/${slug}/`}>
             <StyledImg fluid={heroImage.fluid} backgroundColor={'#eeeeee'} />
             <Title>{title}</Title>
-            <Date>{publishDate}</Date>
+            <Date>{dayjs(publishDate).format('YY.MM.DD')}</Date>
             <ReadingTime>
               {body.childMarkdownRemark.timeToRead} min read
             </ReadingTime>
