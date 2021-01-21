@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { startCase, orderBy } from 'lodash'
 import SEO from '../components/SEO'
-import moment from 'moment'
+import dayjs from 'dayjs'
 import Layout from '../components/Layout'
 import Card from '../components/Card'
 import CardList from '../components/CardList'
@@ -14,7 +14,7 @@ const TagTemplate = ({ data, pageContext }) => {
   const posts = orderBy(
     data.contentfulTag.post,
     // eslint-disable-next-line
-    [object => new moment(object.publishDateISO)],
+    [object => new dayjs(object.publishDateISO)],
     ['desc']
   )
 
