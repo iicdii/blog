@@ -52,8 +52,7 @@ const Title = styled.h2`
 
 const Date = styled.h3`
   margin: 0 1rem 0.5rem 1rem;
-  //color: gray;
-  color: ${props => props.theme.colors.highlight}
+  color: gray;
 `
 
 const ReadingTime = styled.h4`
