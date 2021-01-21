@@ -9,7 +9,7 @@ export default {
   },
   fonts: {
     body:
-      '-apple-system, BlinkMacSystemFont, Noto Sans KR, Montserrat, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+      'Noto Sans KR, Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
   },
   sizes: {
     maxWidth: '1050px',
