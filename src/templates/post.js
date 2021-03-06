@@ -8,6 +8,7 @@ import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
 import PostDetails from '../components/PostDetails'
 import SEO from '../components/SEO'
+import Utterances from '../components/Utterances'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -51,6 +52,7 @@ const PostTemplate = ({ data, pageContext }) => {
         <PageBody body={body} />
       </Container>
       <PostLinks previous={previous} next={next} basePath={basePath} />
+      <Utterances />
     </Layout>
   )
 }
