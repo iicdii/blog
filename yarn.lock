@@ -8098,6 +8098,7 @@ __metadata:
     lodash: ^4.17.21
     path: ^0.12.7
     prettier: ^2.4.1
+    prism-themes: ^1.9.0
     prismjs: ^1.25.0
     prop-types: ^15.7.2
     react: ^17.0.2
@@ -13997,6 +13998,13 @@ __metadata:
     ansi-styles: ^4.0.0
     react-is: ^16.12.0
   checksum: 76f022d2c911d9733a961467545f5aef2cae892da289fff92ba6a6868a10df4d8ef79794ff791e353f67f0edfa85765240f1e7d552e27c94029ae6af1c95174b
+  languageName: node
+  linkType: hard
+
+"prism-themes@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "prism-themes@npm:1.9.0"
+  checksum: ddbadb8d83fc23e428409d7dd1d62dde6033a3afabd721d292e2d251f5693e3eccb7f9641704374f3df3dde59c0e2c8a3c069a7aa72990c4a00acb57f2af81f8
   languageName: node
   linkType: hard
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-require('prismjs/themes/prism.css')
+import 'prismjs/themes/prism.css'
+import 'prism-themes/themes/prism-base16-ateliersulphurpool.light.css'
 
 const Body = styled.div`
   margin: 0 auto;
@@ -88,7 +89,7 @@ const Body = styled.div`
   pre {
     margin: 0 0 2em 0;
     border-radius: 2px;
-    background: ${props => props.theme.colors.secondary} !important;
+    //background: ${props => props.theme.colors.secondary} !important;
     span {
       background: inherit !important;
     }

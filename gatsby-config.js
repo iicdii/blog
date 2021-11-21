@@ -41,21 +41,21 @@ module.exports = {
     basePath: '/',
   },
   plugins: [
-    `gatsby-plugin-emotion`,
+    'gatsby-plugin-emotion',
     'gatsby-plugin-theme-ui',
     'gatsby-plugin-lodash',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: 'gatsby-remark-prismjs',
           },
-          `gatsby-remark-autolink-headers`,
+          'gatsby-remark-autolink-headers',
           {
-            resolve: `gatsby-remark-images-contentful`,
+            resolve: 'gatsby-remark-images-contentful',
             options: {
               maxWidth: 650,
               backgroundColor: 'white',
@@ -68,7 +68,7 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-catch-links`,
+    'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-source-contentful',
       options:
@@ -98,9 +98,9 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     {
-      resolve: `gatsby-plugin-schema-snapshot`,
+      resolve: 'gatsby-plugin-schema-snapshot',
       options: {
-        path: `./src/gatsby/schema/schema.gql`,
+        path: './src/gatsby/schema/schema.gql',
         update: process.env.GATSBY_UPDATE_SCHEMA_SNAPSHOT,
       },
     },

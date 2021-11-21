@@ -65,6 +65,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],
             ["path", "npm:0.12.7"],
             ["prettier", "npm:2.4.1"],
+            ["prism-themes", "npm:1.9.0"],
             ["prismjs", "npm:1.25.0"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:17.0.2"],
@@ -11379,6 +11380,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],
             ["path", "npm:0.12.7"],
             ["prettier", "npm:2.4.1"],
+            ["prism-themes", "npm:1.9.0"],
             ["prismjs", "npm:1.25.0"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:17.0.2"],
@@ -18258,6 +18260,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ansi-regex", "npm:5.0.1"],
             ["ansi-styles", "npm:4.3.0"],
             ["react-is", "npm:16.13.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["prism-themes", [
+        ["npm:1.9.0", {
+          "packageLocation": "./.yarn/cache/prism-themes-npm-1.9.0-59d24dc899-ddbadb8d83.zip/node_modules/prism-themes/",
+          "packageDependencies": [
+            ["prism-themes", "npm:1.9.0"]
           ],
           "linkType": "HARD",
         }]
