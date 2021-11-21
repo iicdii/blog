@@ -16,6 +16,8 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^4.2.0",
     "gatsby-plugin-emotion": "^7.2.0",
+    "gatsby-plugin-image": "^2.2.0",
+    "gatsby-plugin-lodash": "^5.2.0",
     "gatsby-plugin-manifest": "^4.2.0",
     "gatsby-plugin-netlify": "^4.0.0-next.0",
     "gatsby-plugin-offline": "^5.2.0",
@@ -57,8 +59,6 @@
     "clean": "gatsby clean"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-gatsby-standard": "^3.0.2",
     "prettier": "^2.4.1",
     "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",
@@ -66,5 +66,8 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0"
   },
-  "packageManager": "yarn@3.1.0"
+  "packageManager": "yarn@3.1.0",
+  "engines": {
+    "node": ">=14.15.0"
+  }
 }

@@ -43,7 +43,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-emotion`,
     'gatsby-plugin-theme-ui',
+    'gatsby-plugin-lodash',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-image',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -85,7 +87,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'GCN',
+        name: 'Harim Kim',
         short_name: 'GCN',
         start_url: '/',
         background_color: '#ffffff',

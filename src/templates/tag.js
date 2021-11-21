@@ -26,7 +26,7 @@ const TagTemplate = ({ data, pageContext }) => {
 
   let ogImage
   try {
-    ogImage = posts[0].heroImage.ogimg.src
+    ogImage = posts[0].heroImage.gatsbyImageData.images.fallback.src
   } catch (error) {
     ogImage = null
   }
@@ -58,7 +58,7 @@ const TagTemplate = ({ data, pageContext }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     contentfulTag(slug: { eq: $slug }) {
       title
       id
@@ -71,12 +71,7 @@ export const query = graphql`
         publishDateISO: publishDate(formatString: "YYYY-MM-DD")
         heroImage {
           title
-          fluid(maxWidth: 1800) {
-            ...GatsbyContentfulFluid_withWebp_noBase64
-          }
-          ogimg: resize(width: 1800) {
-            src
-          }
+          gatsbyImageData(width: 1800, placeholder: BLURRED)
         }
         body {
           childMarkdownRemark {

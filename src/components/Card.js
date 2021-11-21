@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import dayjs from 'dayjs';
 
 const Post = styled.li`
@@ -38,7 +38,7 @@ const Post = styled.li`
   }
 `
 
-const StyledImg = styled(Img)`
+const StyledImg = styled(GatsbyImage)`
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
 `
@@ -70,7 +70,7 @@ const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {
       {heroImage && body && (
         <Post featured={props.featured}>
           <Link to={`${props.basePath}/${slug}/`}>
-            <StyledImg fluid={heroImage.fluid} backgroundColor={'#eeeeee'} />
+            <StyledImg image={heroImage.gatsbyImageData} backgroundColor={'#eeeeee'} alt={heroImage.title} />
             <Title>{title}</Title>
             <Date>{dayjs(publishDate).format('YY.MM.DD')}</Date>
             <ReadingTime>

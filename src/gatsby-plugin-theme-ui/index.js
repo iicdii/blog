@@ -1,4 +1,4 @@
-export default {
+const config = {
   colors: {
     background: '#ffffff',
     text: '#121212',
@@ -20,4 +20,6 @@ export default {
     medium: '50em',
     large: '70em',
   },
-}
+};
+
+export default config;
