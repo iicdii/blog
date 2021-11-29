@@ -21,7 +21,7 @@ const Form = styled.form`
     font-size: inherit;
     background: ${props => props.theme.colors.tertiary};
     color: ${props => props.theme.colors.text};
-    border-radius: 2px;
+    border-radius: 24px;
     padding: 1em;
     &::-webkit-input-placeholder {
       color: gray;
@@ -83,6 +83,7 @@ const Submit = styled.input`
   color: white !important;
   cursor: pointer;
   transition: 0.2s;
+  font-size: 0.9em !important;
   &:hover {
     background: ${props => props.theme.colors.highlight} !important;
   }
