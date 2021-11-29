@@ -17,11 +17,11 @@ try {
 
 module.exports = {
   siteMetadata: {
-    title: 'Harim Kim',
+    title: 'Harim',
     description:
       `Harim kim's Blog`,
-    siteUrl: 'https://harimking.netlify.com',
-    image: '/images/share.jpg',
+    siteUrl: 'https://harimkim.netlify.app/',
+    image: '/images/blog_meta_image.png',
     menuLinks: [
       {
         name: 'Home',
@@ -87,11 +87,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Harim Kim',
+        name: 'Harim',
         short_name: 'GCN',
         start_url: '/',
         background_color: '#ffffff',
-        theme_color: '#ffffff',
+        theme_color: '#6730ec',
         display: 'minimal-ui',
         icon: './static/images/favicon.png',
       },
