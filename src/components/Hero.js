@@ -41,6 +41,8 @@ const Title = styled.h1`
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  word-break: keep-all;
+  line-height: 4rem;
 `
 
 const Hero = props => (

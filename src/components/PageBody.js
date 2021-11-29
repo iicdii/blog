@@ -23,10 +23,13 @@ const Body = styled.div`
   h3 {
     font-size: 1em;
   }
+  h4, h5, h6 {
+    margin: 0 0 0.5rem 0;
+  }
 
   p {
     line-height: 1.6;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
   }
 
   a {
@@ -49,14 +52,14 @@ const Body = styled.div`
 
   ul,
   ol {
-    margin: 0 0 2em 0;
+    margin: 0 0 0.5em 0;
   }
 
   ul {
     li {
       list-style: disc;
       list-style-position: inside;
-      line-height: 1.25;
+      line-height: 1.6;
       &:last-child {
         margin: 0;
       }
@@ -67,7 +70,7 @@ const Body = styled.div`
     li {
       list-style: decimal;
       list-style-position: inside;
-      line-height: 1.25;
+      line-height: 1.6;
       &:last-child {
         margin: 0;
       }
