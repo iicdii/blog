@@ -21,7 +21,7 @@ const Body = styled.div`
     font-size: 1.25em;
   }
   h3 {
-    font-size: 1em;
+    font-size: 1.125em;
   }
   h4, h5, h6 {
     margin: 0 0 0.5rem 0;
@@ -57,8 +57,7 @@ const Body = styled.div`
 
   ul {
     li {
-      list-style: disc;
-      list-style-position: inside;
+      list-style: decimal none inside;
       line-height: 1.6;
       &:last-child {
         margin: 0;
@@ -68,8 +67,7 @@ const Body = styled.div`
 
   ol {
     li {
-      list-style: decimal;
-      list-style-position: inside;
+      list-style: decimal none inside;
       line-height: 1.6;
       &:last-child {
         margin: 0;
@@ -92,7 +90,6 @@ const Body = styled.div`
   pre {
     margin: 0 0 2em 0;
     border-radius: 2px;
-    //background: ${props => props.theme.colors.secondary} !important;
     span {
       background: inherit !important;
     }

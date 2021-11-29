@@ -15,11 +15,11 @@ const Tag = styled.li`
     float: left;
     transition: 0.2s;
     background: ${props => props.theme.colors.tertiary};
-    padding: 0.5em;
-    border-radius: 2px;
+    border-radius: 24px;
     text-decoration: none;
     color: ${props => props.theme.colors.text};
-    border: 1px solid ${props => props.theme.colors.secondary};
+    font-size: 0.85em;
+    padding: 8px 12px;
     &:hover {
       background: ${props => props.theme.colors.secondary};
     }

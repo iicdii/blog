@@ -13,6 +13,7 @@ const Nav = styled.nav`
   max-width: ${props => props.theme.sizes.maxWidth};
   margin: 0 auto;
   padding: 0 1.5em;
+  font-size: 14px;
 
   ul {
     display: flex;
@@ -31,19 +32,26 @@ const Nav = styled.nav`
 
   a {
     text-decoration: none;
-    color: ${props => props.theme.colors.text};
+    color: #6978a0;
     font-weight: 600;
-    transition: all 0.2s;
-    border-bottom: 2px solid transparent;
+    padding: 8px 16px;
     &:hover {
       color: ${props => props.theme.colors.highlight};
-      border-bottom: 2px solid ${props => props.theme.colors.highlight};
+      background-color: rgba(91, 139, 247, 0.08);
+      border-radius: 24px;
+    }
+    &:active {
+      color: #fff;
+      background-color: ${props => props.theme.colors.highlight};
+      border-radius: 24px;
     }
   }
 `
 
 const activeLinkStyle = {
+  backgroundColor: 'rgba(91, 139, 247, 0.08)',
   color: '#5b8bf7',
+  borderRadius: '24px',
 }
 
 const Menu = () => {

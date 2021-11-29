@@ -17,8 +17,9 @@ const Wrapper = styled.div`
 const Button = styled(Link)`
   background: ${props => props.theme.colors.primary};
   color: white;
-  padding: 1rem;
-  border-radius: 2px;
+  font-size: 0.9em;
+  padding: 0.8rem 1rem;
+  border-radius: 48px;
   margin: 0 0 0 0.5rem;
   cursor: pointer;
   text-decoration: none;
@@ -33,11 +34,11 @@ const Button = styled(Link)`
 
 const Numbers = styled.div`
   border: 1px solid ${props => props.theme.colors.secondary};
-  border-radius: 2px;
+  border-radius: 24px;
   display: inline-block;
   float: left;
   color: ${props => props.theme.colors.text};
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   background: white;
   position: relative;
   transition: 0.3s all;

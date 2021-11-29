@@ -6,21 +6,22 @@ import dayjs from 'dayjs';
 
 const Post = styled.li`
   position: relative;
-  border: 1px solid ${props => props.theme.colors.secondary};
   border-radius: 2px;
   margin: 0 0 1em 0;
   width: 100%;
-  transition: background 0.2s;
+  transition: all 200ms ease;
+  transform: scale(0.95);
   @media screen and (min-width: ${props => props.theme.responsive.small}) {
     flex: ${props => (props.featured ? '0 0 100%' : '0 0 49%')};
     margin: 0 0 2vw 0;
   }
   @media screen and (min-width: ${props => props.theme.responsive.medium}) {
-    flex: ${props => (props.featured ? '0 0 100%' : '0 0 32%')};
+    flex: ${props => (props.featured ? '0 0 100%' : '0 0 31%')};
   }
   &:hover {
-    background: ${props => props.theme.colors.tertiary};
+    transform: scale(1);
   }
+
   a {
     display: flex;
     flex-flow: column;
@@ -30,59 +31,100 @@ const Post = styled.li`
     text-decoration: none;
     .gatsby-image-wrapper {
       height: 0;
-      padding-bottom: 60%;
+      padding-bottom: 90%;
       @media screen and (min-width: ${props => props.theme.responsive.small}) {
-        padding-bottom: ${props => (props.featured ? '40%' : '60%')};
+        padding-bottom: ${props => (props.featured ? '65%' : '90%')};
       }
     }
   }
 `
 
 const StyledImg = styled(GatsbyImage)`
-  border-top-left-radius: 1px;
-  border-top-right-radius: 1px;
+  border-radius: 48px;
 `
 
 const Title = styled.h2`
-  font-size: 1.5em;
+  font-size: ${props => (props.featured ? '3em' : '1.5em')};
   font-weight: 600;
   margin: 1rem 1rem 0.5rem 1rem;
+  word-break: keep-all;
+  line-height: ${props => (props.featured ? '1em' : '1.25em')};
+  color: #2d4379;
+`
+
+const Space = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media screen and (min-width: ${props => props.theme.responsive.small}) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: ${props => props.theme.responsive.medium}) {
+    flex-wrap: nowrap;
+  }
+  column-gap: 36px;
 `
 
 const Date = styled.h3`
   margin: 0 1rem 0.5rem 1rem;
-  color: gray;
+  color: #7483a982;
 `
 
-const ReadingTime = styled.h4`
-  margin: 0 1rem 1.5rem 1rem;
-  color: gray;
-`
+// const ReadingTime = styled.h4`
+//   margin: 0 1rem 1.5rem 1rem;
+//   color: gray;
+// `
 
 const Excerpt = styled.p`
-  margin: 0 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
   line-height: 1.6;
+  color: #7483a9;
 `
+
+const ImgBlock = styled.div`
+  flex: 1 1 100%;
+`;
+
+const TitleBlock = styled.div`
+`;
 
 const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {
   return (
     <>
       {heroImage && body && (
-        <Post featured={props.featured}>
-          <Link to={`${props.basePath}/${slug}/`}>
-            <StyledImg image={heroImage.gatsbyImageData} backgroundColor={'#eeeeee'} alt={heroImage.title} />
-            <Title>{title}</Title>
-            <Date>{dayjs(publishDate).format('YY.MM.DD')}</Date>
-            <ReadingTime>
-              {body.childMarkdownRemark.timeToRead} min read
-            </ReadingTime>
-            <Excerpt
-              dangerouslySetInnerHTML={{
-                __html: body.childMarkdownRemark.excerpt,
-              }}
-            />
-          </Link>
-        </Post>
+        props.featured ? (
+          <Post featured={props.featured}>
+            <Link to={`${props.basePath}/${slug}/`}>
+              <Space>
+                <ImgBlock>
+                  <StyledImg image={heroImage.gatsbyImageData} backgroundColor={'#eeeeee'} alt={heroImage.title} />
+                </ImgBlock>
+                <TitleBlock>
+                  <Title featured={props.featured}>{title}</Title>
+                  <Date>{dayjs(publishDate).format('YY.MM.DD')}</Date>
+                  <Excerpt
+                    dangerouslySetInnerHTML={{
+                      __html: body.childMarkdownRemark.excerpt,
+                    }}
+                  />
+                </TitleBlock>
+              </Space>
+            </Link>
+          </Post>
+        ) : (
+          <Post featured={props.featured}>
+            <Link to={`${props.basePath}/${slug}/`}>
+              <StyledImg image={heroImage.gatsbyImageData} backgroundColor={'#eeeeee'} alt={heroImage.title} />
+              <Title>{title}</Title>
+              <Date>{dayjs(publishDate).format('YY.MM.DD')}</Date>
+              <Excerpt
+                dangerouslySetInnerHTML={{
+                  __html: body.childMarkdownRemark.excerpt,
+                }}
+              />
+            </Link>
+          </Post>
+        )
       )}
     </>
   )

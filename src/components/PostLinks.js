@@ -16,8 +16,9 @@ const Box = styled.div`
   a {
     background: ${props => props.theme.colors.primary};
     color: white;
-    padding: 1em;
-    border-radius: 2px;
+    font-size: 0.9em;
+    padding: 0.8rem 1rem;
+    border-radius: 24px;
     text-decoration: none;
     transition: 0.2s;
     &:hover {
