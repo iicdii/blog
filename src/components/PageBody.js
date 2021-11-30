@@ -57,7 +57,7 @@ const Body = styled.div`
 
   ul {
     li {
-      list-style: decimal none inside;
+      list-style: inside none decimal;
       line-height: 1.6;
       &:last-child {
         margin: 0;
@@ -67,7 +67,7 @@ const Body = styled.div`
 
   ol {
     li {
-      list-style: decimal none inside;
+      list-style: inside none decimal;
       line-height: 1.6;
       &:last-child {
         margin: 0;
