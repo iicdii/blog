@@ -68,7 +68,7 @@ const Space = styled.div`
 
 const Date = styled.h3`
   margin: 0 1rem 0.5rem 1rem;
-  color: #7483a982;
+  color: #7483a9;
 `
 
 // const ReadingTime = styled.h4`
