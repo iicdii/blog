@@ -49,7 +49,7 @@ const Title = styled.h2`
   font-weight: 600;
   margin: 1rem 1rem 0.5rem 1rem;
   word-break: keep-all;
-  line-height: ${props => (props.featured ? '1em' : '1.25em')};
+  line-height: 1.25em;
   color: #2d4379;
 `
 
