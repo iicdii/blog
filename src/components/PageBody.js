@@ -94,6 +94,36 @@ const Body = styled.div`
       background: inherit !important;
     }
   }
+  
+  table {
+    text-indent: 0;
+    border-color: rgb(148 163 184);
+    border-collapse: collapse;
+    border-width: 1px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  thead {
+    background-color: rgb(248, 250, 252);
+  }
+  
+  tr {
+    box-sizing: border-box;
+  }
+  
+  th {
+    border: 1px solid rgb(203, 213, 225);
+    padding: 1rem;
+  }
+  
+  td {
+    border-left: 1px solid rgb(203, 213, 225);
+    border-bottom: 1px solid rgb(203, 213, 225);
+    border-right: 1px solid rgb(203, 213, 225);
+    padding: 1rem;
+    color: rgb(100, 116, 139);
+  }
 `
 
 const PageBody = props => {
