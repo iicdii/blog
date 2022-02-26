@@ -11,14 +11,8 @@ import SEO from '../components/SEO'
 import Utterances from '../components/Utterances'
 
 const PostTemplate = ({ data, pageContext }) => {
-  const {
-    title,
-    metaDescription,
-    heroImage,
-    body,
-    publishDate,
-    tags,
-  } = data.contentfulPost
+  const { title, metaDescription, heroImage, body, publishDate, tags } =
+    data.contentfulPost
 
   const previous = pageContext.prev
   const next = pageContext.next
@@ -59,7 +53,7 @@ const PostTemplate = ({ data, pageContext }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     contentfulPost(slug: { eq: $slug }) {
       title
       slug

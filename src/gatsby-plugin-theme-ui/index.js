@@ -8,8 +8,7 @@ const config = {
     highlight: '#5b8bf7',
   },
   fonts: {
-    body:
-      'Noto Sans KR, Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+    body: 'Noto Sans KR, Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
   },
   sizes: {
     maxWidth: '1050px',
@@ -20,6 +19,6 @@ const config = {
     medium: '50em',
     large: '70em',
   },
-};
+}
 
-export default config;
+export default config

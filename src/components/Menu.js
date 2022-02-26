@@ -5,13 +5,13 @@ import logo from '../../static/images/blog_logo.png'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 const Header = styled.header`
-  background: ${props => props.theme.colors.background};
+  background: ${(props) => props.theme.colors.background};
   width: 100%;
   padding: 1em 0;
 `
 const Nav = styled.nav`
   width: 100%;
-  max-width: ${props => props.theme.sizes.maxWidth};
+  max-width: ${(props) => props.theme.sizes.maxWidth};
   margin: 0 auto;
   padding: 0 1.5em;
   font-size: 14px;
@@ -38,27 +38,27 @@ const Nav = styled.nav`
         font-weight: 600;
         padding: 8px 16px;
         &:hover {
-          color: ${props => props.theme.colors.highlight};
+          color: ${(props) => props.theme.colors.highlight};
           background-color: rgba(91, 139, 247, 0.08);
           border-radius: 24px;
         }
         &:active {
           color: #fff;
-          background-color: ${props => props.theme.colors.highlight};
+          background-color: ${(props) => props.theme.colors.highlight};
           border-radius: 24px;
         }
-      } 
+      }
     }
   }
 `
 
 const Logo = styled.img`
   width: 100px;
-  
-  @media screen and (min-width: ${props => props.theme.responsive.medium}) {
+
+  @media screen and (min-width: ${(props) => props.theme.responsive.medium}) {
     width: 150px;
   }
-`;
+`
 
 const activeLinkStyle = {
   backgroundColor: 'rgba(91, 139, 247, 0.08)',
@@ -77,7 +77,7 @@ const Menu = () => {
               <Logo src={logo} alt="logo" />
             </Link>
           </li>
-          {menuLinks.slice(1).map(link => (
+          {menuLinks.slice(1).map((link) => (
             <li key={link.name}>
               <Link to={link.slug} activeStyle={activeLinkStyle}>
                 {link.name}

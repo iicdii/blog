@@ -21,7 +21,8 @@ const Posts = ({ data, pageContext }) => {
     featuredPost = null
   }
   try {
-    ogImage = ogImage = posts[0].node.heroImage.gatsbyImageData.images.fallback.src
+    ogImage = ogImage =
+      posts[0].node.heroImage.gatsbyImageData.images.fallback.src
   } catch (error) {
     ogImage = null
   }
@@ -51,7 +52,7 @@ const Posts = ({ data, pageContext }) => {
 }
 
 export const query = graphql`
-  query($skip: Int!, $limit: Int!) {
+  query ($skip: Int!, $limit: Int!) {
     allContentfulPost(
       sort: { fields: [publishDate], order: DESC }
       limit: $limit

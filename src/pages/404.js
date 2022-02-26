@@ -10,7 +10,7 @@ const Text = styled.p`
   text-align: center;
   line-height: 1.6;
   a {
-    color: ${props => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.text};
   }
 `
 

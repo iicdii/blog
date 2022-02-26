@@ -6,8 +6,8 @@ const Wrapper = styled.section`
   position: relative;
   min-height: 300px;
   height: auto;
-  @media (min-width: ${props => props.theme.responsive.small}) {
-    height: ${props => props.height || 'auto'};
+  @media (min-width: ${(props) => props.theme.responsive.small}) {
+    height: ${(props) => props.height || 'auto'};
   }
 `
 
@@ -34,7 +34,7 @@ const BgImg = styled(GatsbyImage)`
 //   line-height: 4rem;
 // `
 
-const Hero = props => (
+const Hero = (props) => (
   <Wrapper height={props.height}>
     <BgImg image={props.image.gatsbyImageData} alt={props.image.title} />
   </Wrapper>

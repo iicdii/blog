@@ -50,7 +50,10 @@ const SEO = ({ title, description, image }) => {
 
       {/* Import Google Fonts  */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap"
+        rel="stylesheet"
+      />
     </Helmet>
   )
 }

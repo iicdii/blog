@@ -6,7 +6,7 @@ const SVG = styled.svg`
   width: 0.6rem;
 `
 
-const SelectIcon = props => {
+const SelectIcon = (props) => {
   return (
     <SVG viewBox="0 0 292.362 292.362">
       <path

@@ -27,7 +27,7 @@ const PageTemplate = ({ data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     contentfulPage(slug: { eq: $slug }) {
       title
       slug

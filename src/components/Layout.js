@@ -2,17 +2,17 @@ import React, { useEffect } from 'react'
 import styled from '@emotion/styled'
 import { Global } from '@emotion/react'
 import 'dayjs/locale/ko'
-import dayjs from 'dayjs';
+import dayjs from 'dayjs'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 import { globalStyles } from '../styles/globalStyles.js'
 
 const Root = styled.div`
-  font-family: ${props => props.theme.fonts.body};
+  font-family: ${(props) => props.theme.fonts.body};
 `
 
 const Skip = styled.a`
-  font-family: ${props => props.theme.fonts.body};
+  font-family: ${(props) => props.theme.fonts.body};
   padding: 0 1rem;
   line-height: 60px;
   background: #2867cf;
@@ -30,7 +30,7 @@ const Skip = styled.a`
   }
 `
 
-const Layout = props => {
+const Layout = (props) => {
   function handleFirstTab(e) {
     if (e.keyCode === 9) {
       document.body.classList.add('user-is-tabbing')
@@ -38,8 +38,8 @@ const Layout = props => {
   }
   useEffect(() => window.addEventListener('keydown', handleFirstTab), [])
   useEffect(() => {
-    dayjs.locale('ko');
-  }, []);
+    dayjs.locale('ko')
+  }, [])
 
   return (
     <Root className="siteRoot">

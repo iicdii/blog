@@ -5,7 +5,7 @@ import 'prism-themes/themes/prism-base16-ateliersulphurpool.light.css'
 
 const Body = styled.div`
   margin: 0 auto;
-  max-width: ${props => props.theme.sizes.maxWidthCentered};
+  max-width: ${(props) => props.theme.sizes.maxWidthCentered};
   h1,
   h2,
   h3 {
@@ -23,7 +23,9 @@ const Body = styled.div`
   h3 {
     font-size: 1.125em;
   }
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     margin: 0 0 0.5rem 0;
   }
 
@@ -34,9 +36,9 @@ const Body = styled.div`
 
   a {
     transition: 0.2s;
-    color: ${props => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.text};
     &:hover {
-      color: ${props => props.theme.colors.highlight};
+      color: ${(props) => props.theme.colors.highlight};
     }
   }
 
@@ -77,13 +79,13 @@ const Body = styled.div`
 
   hr {
     border-style: solid;
-    border-color: ${props => props.theme.colors.secondary};
+    border-color: ${(props) => props.theme.colors.secondary};
     margin: 0 0 2em 0;
   }
 
   blockquote {
     font-style: italic;
-    border-left: 4px solid ${props => props.theme.colors.secondary};
+    border-left: 4px solid ${(props) => props.theme.colors.secondary};
     padding: 0 0 0 0.5em;
   }
 
@@ -94,7 +96,7 @@ const Body = styled.div`
       background: inherit !important;
     }
   }
-  
+
   table {
     text-indent: 0;
     border-color: rgb(148 163 184);
@@ -103,20 +105,20 @@ const Body = styled.div`
     width: 100%;
     margin-bottom: 10px;
   }
-  
+
   thead {
     background-color: rgb(248, 250, 252);
   }
-  
+
   tr {
     box-sizing: border-box;
   }
-  
+
   th {
     border: 1px solid rgb(203, 213, 225);
     padding: 1rem;
   }
-  
+
   td {
     border-left: 1px solid rgb(203, 213, 225);
     border-bottom: 1px solid rgb(203, 213, 225);
@@ -126,7 +128,7 @@ const Body = styled.div`
   }
 `
 
-const PageBody = props => {
+const PageBody = (props) => {
   return (
     <Body
       dangerouslySetInnerHTML={{ __html: props.body.childMarkdownRemark.html }}

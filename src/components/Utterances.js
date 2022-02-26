@@ -1,12 +1,12 @@
-import React, { createRef, useLayoutEffect } from 'react';
+import React, { createRef, useLayoutEffect } from 'react'
 
-const src = 'https://utteranc.es/client.js';
+const src = 'https://utteranc.es/client.js'
 
 const Utterances = React.memo(({ repo = 'iicdii/blog' }) => {
-  const containerRef = createRef();
+  const containerRef = createRef()
 
   useLayoutEffect(() => {
-    const utterances = document.createElement('script');
+    const utterances = document.createElement('script')
 
     const attributes = {
       src,
@@ -16,18 +16,18 @@ const Utterances = React.memo(({ repo = 'iicdii/blog' }) => {
       theme: 'github-light',
       crossOrigin: 'anonymous',
       async: 'true',
-    };
+    }
 
     Object.entries(attributes).forEach(([key, value]) => {
       utterances.setAttribute(key, value)
-    });
+    })
 
-    containerRef.current.appendChild(utterances);
+    containerRef.current.appendChild(utterances)
   }, [repo, containerRef])
 
   return <div ref={containerRef} />
 })
 
-Utterances.displayName = 'Utterances';
+Utterances.displayName = 'Utterances'
 
-export default Utterances;
+export default Utterances
