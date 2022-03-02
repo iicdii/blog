@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import 'prismjs/themes/prism.css'
+import 'prismjs/plugins/diff-highlight/prism-diff-highlight.css'
 import 'prism-themes/themes/prism-base16-ateliersulphurpool.light.css'
 
 const Body = styled.div`
@@ -100,9 +101,6 @@ const Body = styled.div`
   pre {
     margin: 0 0 2em 0;
     border-radius: 2px;
-    span {
-      background: inherit !important;
-    }
   }
 
   table {
@@ -133,6 +131,13 @@ const Body = styled.div`
     border-right: 1px solid rgb(203, 213, 225);
     padding: 1rem;
     color: rgb(100, 116, 139);
+  }
+  
+  .token.deleted {
+    text-decoration: none;
+  }
+  .token.inserted {
+    border: none;
   }
 `
 

@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@emotion/react", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:11.8.1"],\
             ["@emotion/styled", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:11.8.1"],\
+            ["@jonsully/gatsby-remark-prismjs", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:6.0.0"],\
             ["babel-plugin-styled-components", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:2.0.6"],\
             ["chalk", "npm:5.0.0"],\
             ["contentful-import", "npm:8.2.28"],\
@@ -59,7 +60,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-autolink-headers", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
             ["gatsby-remark-external-links", "npm:0.0.4"],\
             ["gatsby-remark-images-contentful", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
-            ["gatsby-remark-prismjs", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:6.9.0"],\
             ["gatsby-source-contentful", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:7.7.0"],\
             ["gatsby-transformer-remark", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
             ["inquirer", "npm:8.2.0"],\
@@ -3633,6 +3633,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@iarna-toml-npm-2.2.5-6da1399e8e-b63b2b2c4f.zip/node_modules/@iarna/toml/",\
           "packageDependencies": [\
             ["@iarna/toml", "npm:2.2.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@jonsully/gatsby-remark-prismjs", [\
+        ["npm:6.0.0", {\
+          "packageLocation": "./.yarn/cache/@jonsully-gatsby-remark-prismjs-npm-6.0.0-ac3db39519-db46cca889.zip/node_modules/@jonsully/gatsby-remark-prismjs/",\
+          "packageDependencies": [\
+            ["@jonsully/gatsby-remark-prismjs", "npm:6.0.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:6.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/@jonsully-gatsby-remark-prismjs-virtual-a8cc6e5b01/0/cache/@jonsully-gatsby-remark-prismjs-npm-6.0.0-ac3db39519-db46cca889.zip/node_modules/@jonsully/gatsby-remark-prismjs/",\
+          "packageDependencies": [\
+            ["@jonsully/gatsby-remark-prismjs", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:6.0.0"],\
+            ["@babel/runtime", "npm:7.17.2"],\
+            ["@types/gatsby", null],\
+            ["@types/prismjs", null],\
+            ["gatsby", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:4.9.0"],\
+            ["parse-numeric-range", "npm:1.3.0"],\
+            ["prismjs", "npm:1.27.0"],\
+            ["unist-util-visit", "npm:2.0.3"]\
+          ],\
+          "packagePeers": [\
+            "@types/gatsby",\
+            "@types/prismjs",\
+            "gatsby",\
+            "prismjs"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12081,35 +12110,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["gatsby-remark-prismjs", [\
-        ["npm:6.9.0", {\
-          "packageLocation": "./.yarn/cache/gatsby-remark-prismjs-npm-6.9.0-daaafc005a-4d60732175.zip/node_modules/gatsby-remark-prismjs/",\
-          "packageDependencies": [\
-            ["gatsby-remark-prismjs", "npm:6.9.0"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:6.9.0", {\
-          "packageLocation": "./.yarn/__virtual__/gatsby-remark-prismjs-virtual-2c24cb05f4/0/cache/gatsby-remark-prismjs-npm-6.9.0-daaafc005a-4d60732175.zip/node_modules/gatsby-remark-prismjs/",\
-          "packageDependencies": [\
-            ["gatsby-remark-prismjs", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:6.9.0"],\
-            ["@babel/runtime", "npm:7.16.0"],\
-            ["@types/gatsby", null],\
-            ["@types/prismjs", null],\
-            ["gatsby", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:4.9.0"],\
-            ["parse-numeric-range", "npm:1.3.0"],\
-            ["prismjs", "npm:1.27.0"],\
-            ["unist-util-visit", "npm:2.0.3"]\
-          ],\
-          "packagePeers": [\
-            "@types/gatsby",\
-            "@types/prismjs",\
-            "gatsby",\
-            "prismjs"\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["gatsby-sharp", [\
         ["npm:0.3.0", {\
           "packageLocation": "./.yarn/cache/gatsby-sharp-npm-0.3.0-594d010a4d-1b277020bc.zip/node_modules/gatsby-sharp/",\
@@ -12216,6 +12216,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-starter-gcn", "workspace:."],\
             ["@emotion/react", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:11.8.1"],\
             ["@emotion/styled", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:11.8.1"],\
+            ["@jonsully/gatsby-remark-prismjs", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:6.0.0"],\
             ["babel-plugin-styled-components", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:2.0.6"],\
             ["chalk", "npm:5.0.0"],\
             ["contentful-import", "npm:8.2.28"],\
@@ -12240,7 +12241,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-autolink-headers", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
             ["gatsby-remark-external-links", "npm:0.0.4"],\
             ["gatsby-remark-images-contentful", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
-            ["gatsby-remark-prismjs", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:6.9.0"],\
             ["gatsby-source-contentful", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:7.7.0"],\
             ["gatsby-transformer-remark", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
             ["inquirer", "npm:8.2.0"],\

@@ -61,9 +61,10 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-prismjs',
+            resolve: '@jonsully/gatsby-remark-prismjs',
             options: {
               aliases: { sh: 'bash' },
+              showDiffHighlight: true,
             }
           },
           'gatsby-remark-autolink-headers',

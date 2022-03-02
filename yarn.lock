@@ -1465,21 +1465,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.7":
+  version: 7.17.2
+  resolution: "@babel/runtime@npm:7.17.2"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: a48702d271ecc59c09c397856407afa29ff980ab537b3da58eeee1aeaa0f545402d340a1680c9af58aec94dfdcbccfb6abb211991b74686a86d03d3f6956cacd
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.16.3":
   version: 7.16.3
   resolution: "@babel/runtime@npm:7.16.3"
   dependencies:
     regenerator-runtime: ^0.13.4
   checksum: ab8ac887096d76185ddbf291d28fb976cd32473696dc497ad4905b784acbd5aa462533ad83a5c5104e10ead28c2e0e119840ee28ed8eff90dcdde9d57f916eda
-  languageName: node
-  linkType: hard
-
-"@babel/runtime@npm:^7.16.7":
-  version: 7.17.2
-  resolution: "@babel/runtime@npm:7.17.2"
-  dependencies:
-    regenerator-runtime: ^0.13.4
-  checksum: a48702d271ecc59c09c397856407afa29ff980ab537b3da58eeee1aeaa0f545402d340a1680c9af58aec94dfdcbccfb6abb211991b74686a86d03d3f6956cacd
   languageName: node
   linkType: hard
 
@@ -2182,6 +2182,20 @@ __metadata:
   version: 2.2.5
   resolution: "@iarna/toml@npm:2.2.5"
   checksum: b63b2b2c4fd67969a6291543ada0303d45593801ee744b60f5390f183c03d9192bc67a217abb24be945158f1935f02840d9ffff40c0142aa171b5d3b6b6a3ea5
+  languageName: node
+  linkType: hard
+
+"@jonsully/gatsby-remark-prismjs@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@jonsully/gatsby-remark-prismjs@npm:6.0.0"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    parse-numeric-range: ^1.2.0
+    unist-util-visit: ^2.0.3
+  peerDependencies:
+    gatsby: ^3.0.0-next.0
+    prismjs: ^1.15.0
+  checksum: db46cca889e182a4d8424c5a73e5570cf95c07be3070fd8b4f9091d1d0d1b313ff0202ad1f498e0d791f93be722b744d446fff2b727c6b47836da8341a53a3be
   languageName: node
   linkType: hard
 
@@ -8620,20 +8634,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-prismjs@npm:^6.9.0":
-  version: 6.9.0
-  resolution: "gatsby-remark-prismjs@npm:6.9.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    parse-numeric-range: ^1.2.0
-    unist-util-visit: ^2.0.3
-  peerDependencies:
-    gatsby: ^4.0.0-next
-    prismjs: ^1.15.0
-  checksum: 4d6073217562b95e07bf5103a6349cb94cc791c90ec03c9d4a894512ff5b24bdc7350241a616c66287f8c78bbf2d8f362374c148c2cd1953282dcb18afdc5241
-  languageName: node
-  linkType: hard
-
 "gatsby-sharp@npm:^0.3.0":
   version: 0.3.0
   resolution: "gatsby-sharp@npm:0.3.0"
@@ -8705,6 +8705,7 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.8.1
     "@emotion/styled": ^11.8.1
+    "@jonsully/gatsby-remark-prismjs": ^6.0.0
     babel-plugin-styled-components: ^2.0.6
     chalk: ^5.0.0
     contentful-import: ^8.2.28
@@ -8729,7 +8730,6 @@ __metadata:
     gatsby-remark-autolink-headers: ^5.9.0
     gatsby-remark-external-links: ^0.0.4
     gatsby-remark-images-contentful: ^5.9.0
-    gatsby-remark-prismjs: ^6.9.0
     gatsby-source-contentful: ^7.7.0
     gatsby-transformer-remark: ^5.9.0
     inquirer: ^8.2.0
