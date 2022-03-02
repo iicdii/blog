@@ -18,7 +18,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Harim',
+    title: `Harim Blog`,
     description:
       `Harim kim's Blog`,
     siteUrl: 'https://harimkim.netlify.app/',
@@ -42,6 +42,15 @@ module.exports = {
     basePath: '/',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Noto+Sans+KR\:100,300,400,500,700,900`
+          ],
+        display: "swap",
+      },
+    },
     'gatsby-plugin-emotion',
     'gatsby-plugin-theme-ui',
     'gatsby-plugin-lodash',
