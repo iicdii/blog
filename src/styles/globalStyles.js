@@ -137,12 +137,6 @@ export const globalStyles = css`
     }
   }
 
-  ol,
-  ul,
-  li {
-    list-style: none;
-  }
-
   blockquote,
   q {
     quotes: none;

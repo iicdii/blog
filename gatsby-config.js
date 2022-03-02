@@ -9,11 +9,11 @@ try {
       host: process.env.CONTENTFUL_HOST || 'cdn.contentful.com'
     },
   }
-} finally {
-  const { spaceId, accessToken } = contentfulConfig.production
-  if (!spaceId || !accessToken) {
-    throw new Error('Contentful space ID and access token need to be provided.')
-  }
+}
+
+const { spaceId, accessToken } = contentfulConfig.production
+if (!spaceId || !accessToken) {
+  throw new Error('Contentful space ID and access token need to be provided.')
 }
 
 module.exports = {
@@ -53,6 +53,9 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-prismjs',
+            options: {
+              aliases: { sh: 'bash' },
+            }
           },
           'gatsby-remark-autolink-headers',
           {
@@ -102,7 +105,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Harim',
+        name: `Harim Kim's Blog`,
         short_name: 'GCN',
         start_url: '/',
         background_color: '#ffffff',
