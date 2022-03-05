@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         name: 'About',
-        slug: '/about/',
+        url: 'https://programmers.co.kr/pr/172108_1793',
       },
       {
         name: 'Contact',
