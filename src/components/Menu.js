@@ -77,6 +77,9 @@ const Menu = () => {
               <Logo src={logo} alt="logo" />
             </Link>
           </li>
+          <li>
+            <a href="https://programmers.co.kr/pr/172108_1793">About</a>
+          </li>
           {menuLinks.slice(1).map((link) => (
             <li key={link.name}>
               <Link to={link.slug} activeStyle={activeLinkStyle}>
