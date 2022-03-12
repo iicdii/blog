@@ -110,7 +110,7 @@ const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {
                   <Date>{dayjs(publishDate).format('YY.MM.DD')}</Date>
                   <Excerpt
                     dangerouslySetInnerHTML={{
-                      __html: body.childMarkdownRemark.excerpt,
+                      __html: body.childMarkdownRemark.excerpt.replace('목차', ''),
                     }}
                   />
                 </TitleBlock>

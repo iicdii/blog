@@ -36,6 +36,11 @@ module.exports = {
         name: 'Contact',
         slug: '/contact/',
       },
+      {
+        name: 'Github',
+        icon: 'github',
+        url: 'https://github.com/iicdii',
+      },
     ],
     postsPerFirstPage: 7,
     postsPerPage: 6,
@@ -127,7 +132,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: `Harim Kim's Blog`,
-        short_name: 'GCN',
+        short_name: 'Harim',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#6730ec',

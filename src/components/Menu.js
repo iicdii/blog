@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
+import Icon from '../icons/Icon';
 import logo from '../../static/images/blog_logo.png'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
@@ -48,6 +49,9 @@ const Nav = styled.nav`
           border-radius: 24px;
         }
       }
+      a.has-icon {
+        padding: 16px 12px 8px 12px;
+      }
     }
   }
 `
@@ -66,6 +70,31 @@ const activeLinkStyle = {
   borderRadius: '24px',
 }
 
+const MenuItem = ({ link }) => {
+  if (link.url) {
+    return (
+      <li>
+        <a
+          href={link.url}
+          className={link.icon ? 'has-icon' : ''}
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+        >
+          {link.icon ? <Icon name={link.icon} /> : link.name}
+        </a>
+      </li>
+    );
+  }
+
+  return (
+    <li>
+      <Link to={link.slug} activeStyle={activeLinkStyle} className={link.icon ? 'has-icon' : ''}>
+        {link.icon ? <Icon name={link.icon} /> : link.name}
+      </Link>
+    </li>
+  );
+};
+
 const Menu = () => {
   const { menuLinks } = useSiteMetadata()
   return (
@@ -78,15 +107,7 @@ const Menu = () => {
             </Link>
           </li>
           {menuLinks.slice(1).map((link) => (
-            <li key={link.name}>
-              {link.url ? (
-                <a href={link.url}>{link.name}</a>
-              ) : (
-                <Link to={link.slug} activeStyle={activeLinkStyle}>
-                  {link.name}
-                </Link>
-              )}
-            </li>
+            <MenuItem key={link.name} link={link} />
           ))}
         </ul>
       </Nav>

@@ -12,6 +12,7 @@ export const useSiteMetadata = () => {
             image
             menuLinks {
               name
+              icon
               url
               slug
             }
