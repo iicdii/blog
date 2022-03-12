@@ -145,6 +145,10 @@ const Body = styled.div`
   code[class*=language-], pre[class*=language-] {
     font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
   }
+  
+  .table-of-contents {
+    margin-bottom: 1rem;
+  }
 `
 
 const PageBody = (props) => {

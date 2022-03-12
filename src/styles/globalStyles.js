@@ -201,4 +201,8 @@ export const globalStyles = css`
   body:not(.user-is-tabbing) a:focus {
     outline: none;
   }
+  
+  ::selection {
+    background-color: #dfd4fb;
+  }
 `
