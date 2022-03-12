@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import 'prismjs/themes/prism.css'
 import 'prismjs/plugins/diff-highlight/prism-diff-highlight.css'
-import 'prism-themes/themes/prism-base16-ateliersulphurpool.light.css'
+import 'prism-themes/themes/prism-material-dark.css'
 
 const Body = styled.div`
   margin: 0 auto;
@@ -138,6 +137,13 @@ const Body = styled.div`
   }
   .token.inserted {
     border: none;
+  }
+  
+  & :not(pre) > code[class*="language-"] {
+    background: rgba(175, 184, 193, .2);
+    color: #ff6666;
+    //font-weight: 600;
+    margin: 0 0.1em;
   }
 `
 
