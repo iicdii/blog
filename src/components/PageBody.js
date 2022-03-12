@@ -139,8 +139,11 @@ const Body = styled.div`
   & :not(pre) > code[class*="language-"] {
     background: rgba(175, 184, 193, .2);
     color: #ff6666;
-    //font-weight: 600;
     margin: 0 0.1em;
+  }
+  
+  code[class*=language-], pre[class*=language-] {
+    font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
   }
 `
 
