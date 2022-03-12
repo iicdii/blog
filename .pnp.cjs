@@ -60,6 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-autolink-headers", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
             ["gatsby-remark-external-links", "npm:0.0.4"],\
             ["gatsby-remark-images-contentful", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
+            ["gatsby-remark-table-of-contents", "npm:2.0.0"],\
             ["gatsby-source-contentful", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:7.7.0"],\
             ["gatsby-transformer-remark", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
             ["inquirer", "npm:8.2.0"],\
@@ -12110,6 +12111,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["gatsby-remark-table-of-contents", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/gatsby-remark-table-of-contents-npm-2.0.0-0ba250621d-2e02c85429.zip/node_modules/gatsby-remark-table-of-contents/",\
+          "packageDependencies": [\
+            ["gatsby-remark-table-of-contents", "npm:2.0.0"],\
+            ["js-yaml", "npm:3.14.1"],\
+            ["mdast-util-toc", "npm:5.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["gatsby-sharp", [\
         ["npm:0.3.0", {\
           "packageLocation": "./.yarn/cache/gatsby-sharp-npm-0.3.0-594d010a4d-1b277020bc.zip/node_modules/gatsby-sharp/",\
@@ -12241,6 +12253,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-autolink-headers", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
             ["gatsby-remark-external-links", "npm:0.0.4"],\
             ["gatsby-remark-images-contentful", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
+            ["gatsby-remark-table-of-contents", "npm:2.0.0"],\
             ["gatsby-source-contentful", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:7.7.0"],\
             ["gatsby-transformer-remark", "virtual:caab025d96654cb25d926d2a4b745300baafab786734cd45bb48c421baf7413c890aa63d7a0739a6055a2000ff243a349fd47b7b0379a56780b82ea833351871#npm:5.9.0"],\
             ["inquirer", "npm:8.2.0"],\

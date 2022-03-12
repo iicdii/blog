@@ -61,6 +61,17 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-table-of-contents`,
+            options: {
+              exclude: "목차",
+              tight: true,
+              ordered: false,
+              fromHeading: 1,
+              toHeading: 6,
+              className: "table-of-contents"
+            },
+          },
+          {
             resolve: '@jonsully/gatsby-remark-prismjs',
             options: {
               aliases: { sh: 'bash' },

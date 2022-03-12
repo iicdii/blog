@@ -35,11 +35,8 @@ const Body = styled.div`
   }
 
   a {
-    transition: 0.2s;
-    color: ${(props) => props.theme.colors.text};
-    &:hover {
-      color: ${(props) => props.theme.colors.highlight};
-    }
+    color: ${(props) => props.theme.colors.highlight};
+    text-decoration: none;
   }
 
   del {
