@@ -149,6 +149,15 @@ const Body = styled.div`
   .table-of-contents {
     margin-bottom: 1rem;
   }
+  
+  .gatsby-highlight-code-line {
+    background-color: #022a4b;
+    margin-right: -1.2em;
+    margin-left: -1em;
+    padding-right: 0.5em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #0687f0;
+  }
 `
 
 const PageBody = (props) => {
