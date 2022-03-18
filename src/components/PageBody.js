@@ -158,6 +158,10 @@ const Body = styled.div`
     padding-left: 0.75em;
     border-left: 0.25em solid #0687f0;
   }
+  
+  td {
+    line-height: 1.25;
+  }
 `
 
 const PageBody = (props) => {
