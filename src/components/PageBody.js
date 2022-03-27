@@ -151,6 +151,7 @@ const Body = styled.div`
   }
   
   .gatsby-highlight-code-line {
+    display: block;
     background-color: #022a4b;
     margin-right: -1.2em;
     margin-left: -1em;
