@@ -89,7 +89,10 @@ const ImgBlock = styled.div`
 
 const TitleBlock = styled.div``
 
-const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {
+const Card = ({ slug, heroImage, title, publishDate, body, metaDescription, ...props }) => {
+  const description = metaDescription?.internal?.content ||
+    body.childMarkdownRemark.excerpt.replace('목차', '');
+
   return (
     <>
       {heroImage &&
@@ -110,7 +113,7 @@ const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {
                   <Date>{dayjs(publishDate).format('YY.MM.DD')}</Date>
                   <Excerpt
                     dangerouslySetInnerHTML={{
-                      __html: body.childMarkdownRemark.excerpt.replace('목차', ''),
+                      __html: description,
                     }}
                   />
                 </TitleBlock>
@@ -129,7 +132,7 @@ const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {
               <Date>{dayjs(publishDate).format('YY.MM.DD')}</Date>
               <Excerpt
                 dangerouslySetInnerHTML={{
-                  __html: body.childMarkdownRemark.excerpt,
+                  __html: description,
                 }}
               />
             </Link>
